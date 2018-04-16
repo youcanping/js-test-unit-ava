@@ -1,0 +1,23 @@
+{
+    "env": {
+        "test": {
+          "presets": ["env"]
+        }
+      },
+    "presets": [
+        ["env",{
+                "target": {
+                "ios": "> 7.0",
+                "android": "> 4.0",
+                "browsers": "not ie"
+                },
+                "loose": true,
+                "modules": false
+             }
+        ]
+    ],
+    "comments": false,
+    "plugins": [
+        "transform-runtime"
+    ]
+  }

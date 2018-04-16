@@ -1,0 +1,29 @@
+{
+  "name": "js-test-unit-ava",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "BABEL_ENV=test ava"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "ava": {
+    "babel": {
+      "babelrc": true,
+      "presets": ["env"],
+      "plugins": [
+         "transform-runtime"
+      ]
+    },
+    "require": [
+      "babel-register"
+    ]
+  }
+}
